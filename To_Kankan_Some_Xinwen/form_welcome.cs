@@ -9,16 +9,16 @@ using System.Data;
 
 namespace To_Kankan_Some_Xinwen
 {
-    partial class SmobilerForm1 : Smobiler.Core.Controls.MobileForm
+    partial class form_welcome : Smobiler.Core.Controls.MobileForm
     {
-        public SmobilerForm1() : base()
+        public form_welcome() : base()
         {
             InitializeComponent();
         }
 
         private void btn_log_Press(object sender, EventArgs e)
         {
-            String connetStr = "server=XX.XX.XX.XX;port=3306;user=XXXXXX;password=XXXXXX; database=XXXXXX;";
+            String connetStr = "server=;port=3306;user=;password=; database=;";
             // server=127.0.0.1/localhost 代表本机，端口号port默认是3306可以不写
             MySqlConnection conn = new MySqlConnection(connetStr);
             try

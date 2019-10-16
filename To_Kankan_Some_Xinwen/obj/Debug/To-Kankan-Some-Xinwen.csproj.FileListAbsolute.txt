@@ -21,8 +21,8 @@ C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\frmMain.resources
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\frmSetting.resources
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.Properties.Resources.resources
-C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.SmobilerForm1.resources
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To-Kankan-Some-Xinwen.csproj.GenerateResource.cache
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To-Kankan-Some-Xinwen.csproj.CopyComplete
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To-Kankan-Some-Xinwen.exe
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To-Kankan-Some-Xinwen.pdb
+C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.form_welcome.resources

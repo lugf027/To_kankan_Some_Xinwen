@@ -113,11 +113,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <Compile Include="SmobilerForm1.cs">
+    <Compile Include="form_welcome.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="SmobilerForm1.Designer.cs">
-      <DependentUpon>SmobilerForm1.cs</DependentUpon>
+    <Compile Include="form_welcome.Designer.cs">
+      <DependentUpon>form_welcome.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -137,8 +137,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="SmobilerForm1.resx">
-      <DependentUpon>SmobilerForm1.cs</DependentUpon>
+    <EmbeddedResource Include="form_welcome.resx">
+      <DependentUpon>form_welcome.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

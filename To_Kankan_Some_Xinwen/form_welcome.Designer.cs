@@ -2,7 +2,7 @@
 
 namespace To_Kankan_Some_Xinwen
 {
-    partial class SmobilerForm1 : Smobiler.Core.Controls.MobileForm
+    partial class form_welcome : Smobiler.Core.Controls.MobileForm
     {
         #region "SmobilerForm Designer generated code "
 
