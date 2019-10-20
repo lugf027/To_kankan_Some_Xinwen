@@ -9,26 +9,60 @@ using System.Data;
 
 namespace To_Kankan_Some_Xinwen
 {
-    partial class form_welcome : Smobiler.Core.Controls.MobileForm
+    partial class SmobilerForm1 : Smobiler.Core.Controls.MobileForm
     {
-        public form_welcome() : base()
+        public SmobilerForm1() : base()
         {
             InitializeComponent();
+            try
+            {
+                Console.WriteLine("初始化？？？");
+                ReadClientData("username", (object s, ClientDataResultHandlerArgs args) =>
+                {
+                    if (string.IsNullOrEmpty(args.error))
+                    {
+                        textBox_user.Text = args.Value;
+                        Console.WriteLine(args.Value);
+                    }
+                });
+                ReadClientData("password", (object s, ClientDataResultHandlerArgs args) =>
+                {
+                    if (string.IsNullOrEmpty(args.error))
+                    {
+                        textBox_pwd.Text = args.Value;
+                        Console.WriteLine(args.Value);
+                    }
+                });
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("开始清空");
+                textBox_user.Text = null;
+                textBox_pwd.Text = null;
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btn_log_Press(object sender, EventArgs e)
         {
-            String connetStr = "server=;port=3306;user=;password=; database=;";
+            Console.WriteLine("初始化？");
+            String connetStr = "server=47.93.40.32;port=3306;user=citi;password=citi; database=tksx;";
             // server=127.0.0.1/localhost 代表本机，端口号port默认是3306可以不写
             MySqlConnection conn = new MySqlConnection(connetStr);
             try
             {
                 string username = textBox_user.Text.Trim();
                 string password = textBox_pwd.Text.Trim();
-                if (username.Length <= 0)
+                if (string.IsNullOrEmpty(username))
                     throw new Exception("请输入用户名！");
-                if (password.Length <= 0)
+                if (string.IsNullOrEmpty(password))
                     throw new Exception("请输入密码！");
+
+                if (checkRemeber.Checked == true)
+                {
+                    LoadClientData("username", textBox_user.Text);
+                    LoadClientData("password", textBox_pwd.Text);
+                }
 
                 conn.Open();//打开通道，建立连接，可能出现异常,使用try catch语句
                 Console.WriteLine("已经建立连接");
@@ -44,9 +78,12 @@ namespace To_Kankan_Some_Xinwen
                     throw new Exception("用户不存在，请重新输入！");
                 string pwd = save.Tables[0].Rows[0][2].ToString();
 
+                //登录成功，在此跳转
                 if (pwd == textBox_pwd.Text)
                 {
                     MessageBox.Show("密码正确！");
+                    Form_Defult form_Defult = new Form_Defult();
+                    this.Show(form_Defult);
                 }
                 else
                 {
@@ -55,6 +92,16 @@ namespace To_Kankan_Some_Xinwen
             }
             catch (Exception ex)
             {
+                //RemoveClientData("username", (object s, ClientDataResultHandlerArgs args) =>
+                //{
+                //    Toast("账户名清空");
+                //    Console.WriteLine("11");
+                //});
+                //RemoveClientData("password", (object s, ClientDataResultHandlerArgs args) =>
+                //{
+                //    Toast("密码清空");
+                //    Console.WriteLine("11");
+                //});
                 MessageBox.Show(ex.Message);
             }
             finally

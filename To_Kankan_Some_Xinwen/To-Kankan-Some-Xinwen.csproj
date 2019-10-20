@@ -75,6 +75,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form_Defult.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form_Defult.Designer.cs">
+      <DependentUpon>Form_Defult.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGenerateQRcode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,14 +119,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <Compile Include="form_welcome.cs">
+    <Compile Include="Form_Welcome.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="form_welcome.Designer.cs">
-      <DependentUpon>form_welcome.cs</DependentUpon>
+    <Compile Include="Form_Welcome.Designer.cs">
+      <DependentUpon>Form_Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template_News.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template_News.Designer.cs">
+      <DependentUpon>Template_News.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="form_defult.resx">
+      <DependentUpon>Form_Defult.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGenerateQRcode.resx">
       <DependentUpon>frmGenerateQRcode.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,8 +152,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="form_welcome.resx">
-      <DependentUpon>form_welcome.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Welcome.resx">
+      <DependentUpon>Form_Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template_News.resx">
+      <DependentUpon>Template_News.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

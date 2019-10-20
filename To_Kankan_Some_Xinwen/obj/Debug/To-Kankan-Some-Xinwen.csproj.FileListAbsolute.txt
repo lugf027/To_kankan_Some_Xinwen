@@ -25,4 +25,6 @@ C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To-Kankan-Some-Xinwen.csproj.CopyComplete
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To-Kankan-Some-Xinwen.exe
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To-Kankan-Some-Xinwen.pdb
-C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.form_welcome.resources
+C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.SmobilerForm1.resources
+C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.Form_Defult.resources
+C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.Template_News.resources

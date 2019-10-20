@@ -2,7 +2,7 @@
 
 namespace To_Kankan_Some_Xinwen
 {
-    partial class form_welcome : Smobiler.Core.Controls.MobileForm
+    partial class SmobilerForm1 : Smobiler.Core.Controls.MobileForm
     {
         #region "SmobilerForm Designer generated code "
 
@@ -25,7 +25,7 @@ namespace To_Kankan_Some_Xinwen
             this.fontIcon1 = new Smobiler.Core.Controls.FontIcon();
             this.textBox_user = new Smobiler.Core.Controls.TextBox();
             this.textBox_pwd = new Smobiler.Core.Controls.TextBox();
-            this.checkBox1 = new Smobiler.Core.Controls.CheckBox();
+            this.checkRemeber = new Smobiler.Core.Controls.CheckBox();
             this.label_tip = new Smobiler.Core.Controls.Label();
             this.btn_log = new Smobiler.Core.Controls.Button();
             this.btn_log_public = new Smobiler.Core.Controls.Button();
@@ -53,7 +53,7 @@ namespace To_Kankan_Some_Xinwen
             // fontIcon_user
             // 
             this.fontIcon_user.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.fontIcon_user.Location = new System.Drawing.Point(50, 170);
+            this.fontIcon_user.Location = new System.Drawing.Point(50, 219);
             this.fontIcon_user.Name = "fontIcon_user";
             this.fontIcon_user.ResourceID = "user";
             this.fontIcon_user.Size = new System.Drawing.Size(40, 40);
@@ -61,37 +61,37 @@ namespace To_Kankan_Some_Xinwen
             // fontIcon1
             // 
             this.fontIcon1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.fontIcon1.Location = new System.Drawing.Point(50, 220);
+            this.fontIcon1.Location = new System.Drawing.Point(50, 269);
             this.fontIcon1.Name = "fontIcon1";
             this.fontIcon1.ResourceID = "lock";
             this.fontIcon1.Size = new System.Drawing.Size(40, 40);
             // 
             // textBox_user
             // 
-            this.textBox_user.Location = new System.Drawing.Point(100, 175);
+            this.textBox_user.Location = new System.Drawing.Point(100, 224);
             this.textBox_user.Name = "textBox_user";
             this.textBox_user.Size = new System.Drawing.Size(150, 30);
             this.textBox_user.WaterMarkText = "账号";
             // 
             // textBox_pwd
             // 
-            this.textBox_pwd.Location = new System.Drawing.Point(100, 225);
+            this.textBox_pwd.Location = new System.Drawing.Point(100, 274);
             this.textBox_pwd.Name = "textBox_pwd";
             this.textBox_pwd.SecurityMode = true;
             this.textBox_pwd.Size = new System.Drawing.Size(150, 30);
             this.textBox_pwd.WaterMarkText = "密码";
             // 
-            // checkBox1
+            // checkRemeber
             // 
-            this.checkBox1.Location = new System.Drawing.Point(70, 270);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(20, 20);
-            this.checkBox1.TintColor = System.Drawing.Color.Gray;
+            this.checkRemeber.Location = new System.Drawing.Point(70, 319);
+            this.checkRemeber.Name = "checkRemeber";
+            this.checkRemeber.Size = new System.Drawing.Size(20, 20);
+            this.checkRemeber.TintColor = System.Drawing.Color.Gray;
             // 
             // label_tip
             // 
             this.label_tip.ForeColor = System.Drawing.Color.Gray;
-            this.label_tip.Location = new System.Drawing.Point(100, 270);
+            this.label_tip.Location = new System.Drawing.Point(100, 319);
             this.label_tip.Name = "label_tip";
             this.label_tip.Size = new System.Drawing.Size(150, 20);
             this.label_tip.Text = "记住用户名与密码";
@@ -100,7 +100,7 @@ namespace To_Kankan_Some_Xinwen
             // 
             this.btn_log.BorderRadius = 20;
             this.btn_log.FontSize = 30F;
-            this.btn_log.Location = new System.Drawing.Point(70, 320);
+            this.btn_log.Location = new System.Drawing.Point(70, 369);
             this.btn_log.Name = "btn_log";
             this.btn_log.Size = new System.Drawing.Size(160, 40);
             this.btn_log.Text = "登 录";
@@ -110,7 +110,7 @@ namespace To_Kankan_Some_Xinwen
             // 
             this.btn_log_public.BorderRadius = 20;
             this.btn_log_public.FontSize = 30F;
-            this.btn_log_public.Location = new System.Drawing.Point(70, 378);
+            this.btn_log_public.Location = new System.Drawing.Point(70, 427);
             this.btn_log_public.Name = "btn_log_public";
             this.btn_log_public.Size = new System.Drawing.Size(160, 40);
             this.btn_log_public.Text = "一键登录";
@@ -125,10 +125,11 @@ namespace To_Kankan_Some_Xinwen
             this.fontIcon1,
             this.textBox_user,
             this.textBox_pwd,
-            this.checkBox1,
+            this.checkRemeber,
             this.label_tip,
             this.btn_log,
             this.btn_log_public});
+            this.Size = new System.Drawing.Size(300, 600);
             this.Name = "SmobilerForm1";
 
         }
@@ -140,7 +141,7 @@ namespace To_Kankan_Some_Xinwen
         private Smobiler.Core.Controls.FontIcon fontIcon1;
         private Smobiler.Core.Controls.TextBox textBox_user;
         private Smobiler.Core.Controls.TextBox textBox_pwd;
-        private Smobiler.Core.Controls.CheckBox checkBox1;
+        private Smobiler.Core.Controls.CheckBox checkRemeber;
         private Smobiler.Core.Controls.Label label_tip;
         private Smobiler.Core.Controls.Button btn_log;
         private Smobiler.Core.Controls.Button btn_log_public;
