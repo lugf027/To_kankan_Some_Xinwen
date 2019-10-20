@@ -53,7 +53,7 @@ namespace To_Kankan_Some_Xinwen
 
         private void title_defult_ImagePress(object sender, EventArgs e)
         {
-            MessageBox.Show("NMSL");
+            OpenDrawer();
         }
     }
 }

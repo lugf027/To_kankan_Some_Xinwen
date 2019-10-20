@@ -19,10 +19,10 @@ namespace To_Kankan_Some_Xinwen
         [System.Diagnostics.DebuggerStepThrough()]
         private void InitializeComponent()
         {
-            Smobiler.Core.Controls.ToolBarItem toolBarItem1 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem2 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem3 = new Smobiler.Core.Controls.ToolBarItem();
-            Smobiler.Core.Controls.ToolBarItem toolBarItem4 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem9 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem10 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem11 = new Smobiler.Core.Controls.ToolBarItem();
+            Smobiler.Core.Controls.ToolBarItem toolBarItem12 = new Smobiler.Core.Controls.ToolBarItem();
             this.title_defult = new Smobiler.Core.Controls.Title();
             this.listView1 = new Smobiler.Core.Controls.ListView();
             this.toolBar1 = new Smobiler.Core.Controls.ToolBar();
@@ -46,48 +46,48 @@ namespace To_Kankan_Some_Xinwen
             this.listView1.PageSizeTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(145)))), ((int)(((byte)(145)))));
             this.listView1.PageSizeTextSize = 11F;
             this.listView1.ShowSplitLine = true;
-            this.listView1.Size = new System.Drawing.Size(300, 506);
+            this.listView1.Size = new System.Drawing.Size(300, 482);
             this.listView1.TemplateControlName = "Template_News";
             // 
             // toolBar1
             // 
-            toolBarItem1.IconColor = System.Drawing.Color.LightSkyBlue;
-            toolBarItem1.IconID = "ios-paper";
-            toolBarItem1.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem1.Name = "News";
-            toolBarItem1.SelectIconColor = System.Drawing.Color.DodgerBlue;
-            toolBarItem1.SelectIconID = "ios-paper";
-            toolBarItem1.Text = "新闻";
-            toolBarItem2.IconColor = System.Drawing.Color.LightSkyBlue;
-            toolBarItem2.IconID = "Chart";
-            toolBarItem2.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem2.Name = "Hots";
-            toolBarItem2.SelectIconColor = System.Drawing.Color.DodgerBlue;
-            toolBarItem2.SelectIconID = "chart";
-            toolBarItem2.Text = "热搜";
-            toolBarItem3.IconColor = System.Drawing.Color.LightSkyBlue;
-            toolBarItem3.IconID = "type";
-            toolBarItem3.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem3.Name = "Types";
-            toolBarItem3.SelectIconColor = System.Drawing.Color.DodgerBlue;
-            toolBarItem3.SelectIconID = "type";
-            toolBarItem3.Text = "分类";
-            toolBarItem4.IconColor = System.Drawing.Color.LightSkyBlue;
-            toolBarItem4.IconID = "ios-home";
-            toolBarItem4.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
-            toolBarItem4.Name = "Mine";
-            toolBarItem4.SelectIconColor = System.Drawing.Color.DodgerBlue;
-            toolBarItem4.SelectIconID = "ios-home";
-            toolBarItem4.Text = "我";
+            toolBarItem9.IconColor = System.Drawing.Color.LightSkyBlue;
+            toolBarItem9.IconID = "ios-paper";
+            toolBarItem9.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem9.Name = "News";
+            toolBarItem9.SelectIconColor = System.Drawing.Color.DodgerBlue;
+            toolBarItem9.SelectIconID = "ios-paper";
+            toolBarItem9.Text = "新闻";
+            toolBarItem10.IconColor = System.Drawing.Color.LightSkyBlue;
+            toolBarItem10.IconID = "bar-chart";
+            toolBarItem10.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem10.Name = "Hots";
+            toolBarItem10.SelectIconColor = System.Drawing.Color.DodgerBlue;
+            toolBarItem10.SelectIconID = "bar-chart";
+            toolBarItem10.Text = "热搜";
+            toolBarItem11.IconColor = System.Drawing.Color.LightSkyBlue;
+            toolBarItem11.IconID = "th-large";
+            toolBarItem11.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem11.Name = "Types";
+            toolBarItem11.SelectIconColor = System.Drawing.Color.DodgerBlue;
+            toolBarItem11.SelectIconID = "th-large";
+            toolBarItem11.Text = "分类";
+            toolBarItem12.IconColor = System.Drawing.Color.LightSkyBlue;
+            toolBarItem12.IconID = "ios-home";
+            toolBarItem12.ImageType = Smobiler.Core.Controls.ImageEx.ImageStyle.FontIcon;
+            toolBarItem12.Name = "Mine";
+            toolBarItem12.SelectIconColor = System.Drawing.Color.DodgerBlue;
+            toolBarItem12.SelectIconID = "ios-home";
+            toolBarItem12.Text = "我";
             this.toolBar1.Items.AddRange(new Smobiler.Core.Controls.ToolBarItem[] {
-            toolBarItem1,
-            toolBarItem2,
-            toolBarItem3,
-            toolBarItem4});
+            toolBarItem9,
+            toolBarItem10,
+            toolBarItem11,
+            toolBarItem12});
             this.toolBar1.ItemWidth = 25;
             this.toolBar1.Location = new System.Drawing.Point(46, 571);
             this.toolBar1.Name = "toolBar1";
-            this.toolBar1.Size = new System.Drawing.Size(100, 64);
+            this.toolBar1.Size = new System.Drawing.Size(100, 73);
             // 
             // Form_Defult
             // 
@@ -95,6 +95,8 @@ namespace To_Kankan_Some_Xinwen
             this.title_defult,
             this.listView1,
             this.toolBar1});
+            this.DrawerName = "Template_Sides";
+            this.DrawerWidth = 200;
             this.Size = new System.Drawing.Size(300, 600);
             this.Load += new System.EventHandler(this.Form_Defult_Load);
             this.Name = "Form_Defult";

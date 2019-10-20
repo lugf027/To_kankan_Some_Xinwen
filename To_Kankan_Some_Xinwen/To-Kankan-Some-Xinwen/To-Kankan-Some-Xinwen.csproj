@@ -75,11 +75,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form_Defult.cs">
+    <Compile Include="Form_Hots.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form_Defult.Designer.cs">
-      <DependentUpon>Form_Defult.cs</DependentUpon>
+    <Compile Include="Form_Hots.Designer.cs">
+      <DependentUpon>Form_Hots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Mine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form_Mine.Designer.cs">
+      <DependentUpon>Form_Mine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_News.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form_News.Designer.cs">
+      <DependentUpon>Form_News.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Types.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form_Types.Designer.cs">
+      <DependentUpon>Form_Types.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGenerateQRcode.cs">
       <SubType>Form</SubType>
@@ -119,11 +137,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <Compile Include="Form_Welcome.cs">
+    <Compile Include="Form_Login.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form_Welcome.Designer.cs">
-      <DependentUpon>Form_Welcome.cs</DependentUpon>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Template_News.cs">
       <SubType>Component</SubType>
@@ -131,10 +149,16 @@
     <Compile Include="Template_News.Designer.cs">
       <DependentUpon>Template_News.cs</DependentUpon>
     </Compile>
+    <Compile Include="Template_Sides.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template_Sides.Designer.cs">
+      <DependentUpon>Template_Sides.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="form_defult.resx">
-      <DependentUpon>Form_Defult.cs</DependentUpon>
+    <EmbeddedResource Include="Form_News.resx">
+      <DependentUpon>Form_News.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGenerateQRcode.resx">
       <DependentUpon>frmGenerateQRcode.cs</DependentUpon>
@@ -152,11 +176,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Welcome.resx">
-      <DependentUpon>Form_Welcome.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Template_News.resx">
       <DependentUpon>Template_News.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template_Sides.resx">
+      <DependentUpon>Template_Sides.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

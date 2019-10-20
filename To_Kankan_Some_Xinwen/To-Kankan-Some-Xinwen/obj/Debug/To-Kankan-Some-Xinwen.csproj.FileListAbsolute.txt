@@ -28,3 +28,4 @@ C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.SmobilerForm1.resources
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.Form_Defult.resources
 C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.Template_News.resources
+C:\Users\leo\source\repos\To-Kankan-Some-Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.Template_Sides.resources
