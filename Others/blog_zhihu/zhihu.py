@@ -12,6 +12,7 @@ import datetime
 import time
 
 time_now = ''
+last_results = ''
 
 def get_zhihu_hots():
     url = "https://www.zhihu.com/billboard"
@@ -52,20 +53,26 @@ def get_zhihu_hots():
 
 def begin():
     global time_now
+    global last_results
     while True:
         try:
             hot_points = get_zhihu_hots()
-
             mydb = mysql.connector.connect(
-                host="xx.xx.xx.xx",
+                host="xx",
                 user="xx",
                 passwd="xx",
                 database="xx"
             )
             mycursor = mydb.cursor()
             for hot_point in hot_points:
-                sql = "INSERT INTO zhihu1 (NO, TITLE, VALUE, TIME) VALUES (%s, %s, %s, %s)"
-                val = (hot_point[0], hot_point[1], hot_point[2], time_now)
+                num_chan = 51 - int(hot_point[0])
+                for last_result in last_results:
+                    if hot_point[1] == last_result[1]:
+                        num_chan = int(last_result[0])-int(hot_point[0])
+                        break
+
+                sql = "INSERT INTO `zhihu1` (NO, TITLE, VALUE, TIME, NUM_CHANGE) VALUES (%s, %s, %s, %s, %s)"
+                val = (hot_point[0], hot_point[1], hot_point[2], time_now, num_chan)
                 mycursor.execute(sql, val)
                 mydb.commit()  # 数据表内容有更新，必须使用到该语句
             print(hot_points)
@@ -76,10 +83,11 @@ def begin():
             print('-' * 30)
         finally:
             print(time_now)
+            last_results = hot_points
 
 begin()
 
-# CREATE TABLE IF NOT EXISTS `zhihu`(
+# CREATE TABLE IF NOT EXISTS `zhihu1`(
 #    `ID` INT(10) UNSIGNED AUTO_INCREMENT,
 #    `NO` INT(2) NOT NULL,
 #    `TITLE` VARCHAR(50) NOT NULL,

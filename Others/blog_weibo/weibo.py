@@ -11,27 +11,9 @@ import re
 import datetime
 import mysql.connector
 import time
-
-weibo_name = ""  # 用户账号
-weibo_pwd = ""  # 用户密码
 url = "https://s.weibo.com/top/summary"  # 热搜地址
 time_now = ''
-
-# 可以登录，但没必要
-def login_weibo():
-    driver = webdriver.Chrome()  # Optional argument, if not specified will search path.
-    driver.get('https://weibo.com/')  # 获取微博页面
-    driver.implicitly_wait(5)
-
-    login_name = driver.find_element_by_css_selector("#loginname")  # 用户名输入框
-    login_pwd = driver.find_element_by_css_selector("#pl_login_form > div > div:nth-child(3) > "
-                                                     "div.info_list.password > div > input")  # 密码输入框
-    login_pwd.send_keys(weibo_pwd)
-    login_name.send_keys(weibo_name)
-
-    login_btn = driver.find_element_by_css_selector("#pl_login_form > div > div:nth-child(3) > "
-                                                     "div.info_list.login_btn > a")
-    login_btn.click()  # 点击登录
+last_results = []
 
 
 # 获得51条热搜
@@ -85,19 +67,25 @@ def get_hot_points():
 
 def begin():
     global time_now
+    global last_results
     while True:
         try:
             hot_points = get_hot_points()
             mydb = mysql.connector.connect(
-                host="xx.xx.xx.xx",
+                host="xx",
                 user="xx",
                 passwd="xx",
                 database="xx"
             )
             mycursor = mydb.cursor()
             for hot_point in hot_points:
-                sql = "INSERT INTO weibo (NO, TITLE, VALUE, TIME) VALUES (%s, %s, %s, %s)"
-                val = (hot_point[0], hot_point[1], hot_point[2], time_now)
+                num_chan = 51-int(hot_point[0])
+                for last_result in last_results:
+                    if last_result[1] == hot_point[1]:
+                        num_chan = int(last_result[0]) - int(hot_point[0])
+                        break
+                sql = "INSERT INTO `weibo1` (NO, TITLE, VALUE, TIME, NUM_CHANGE) VALUES (%s, %s, %s, %s, %s)"
+                val = (hot_point[0], hot_point[1], hot_point[2], time_now, num_chan)
                 mycursor.execute(sql, val)
                 mydb.commit()  # 数据表内容有更新，必须使用到该语句
             print(hot_points)
@@ -108,14 +96,15 @@ def begin():
             print('-' * 30)
         finally:
             print(time_now)
+            last_results = hot_points
 
 begin()
 
 
-# CREATE TABLE IF NOT EXISTS `weibo`(
+# CREATE TABLE IF NOT EXISTS `weibo1`(
 #    `ID` INT(10) UNSIGNED AUTO_INCREMENT,
 #    `NO` INT(2) NOT NULL,
-#    `TITLE` VARCHAR(50) NOT NULL,
+#    `TITLE` VARCHAR(30) NOT NULL,
 #    `VALUE` INT(5) NOT NULL,
 #    `TIME` TIMESTAMP,
 #    `COLOR` INT(2) DEFAULT 0 NOT NULL,
@@ -123,3 +112,20 @@ begin()
 #    PRIMARY KEY ( `ID` )
 # )ENGINE=INNODB DEFAULT CHARSET=utf8;
 
+# weibo_name = ""  # 用户账号
+# weibo_pwd = ""  # 用户密码
+# # 可以登录，但没必要
+# def login_weibo():
+#     driver = webdriver.Chrome()  # Optional argument, if not specified will search path.
+#     driver.get('https://weibo.com/')  # 获取微博页面
+#     driver.implicitly_wait(5)
+#
+#     login_name = driver.find_element_by_css_selector("#loginname")  # 用户名输入框
+#     login_pwd = driver.find_element_by_css_selector("#pl_login_form > div > div:nth-child(3) > "
+#                                                      "div.info_list.password > div > input")  # 密码输入框
+#     login_pwd.send_keys(weibo_pwd)
+#     login_name.send_keys(weibo_name)
+#
+#     login_btn = driver.find_element_by_css_selector("#pl_login_form > div > div:nth-child(3) > "
+#                                                      "div.info_list.login_btn > a")
+#     login_btn.click()  # 点击登录
