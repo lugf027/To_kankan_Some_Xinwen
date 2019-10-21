@@ -16,7 +16,7 @@ namespace To_Kankan_Some_Xinwen
 
         public Weibo_Hots()
         {
-            String connetStr = "server=47.93.40.32;port=3306;user=citi;password=citi; database=tksx;";
+            String connetStr = "";
             // server=127.0.0.1/localhost 代表本机，端口号port默认是3306可以不写
             MySqlConnection conn = new MySqlConnection(connetStr);
 
