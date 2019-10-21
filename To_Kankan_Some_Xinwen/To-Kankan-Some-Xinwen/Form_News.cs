@@ -55,5 +55,19 @@ namespace To_Kankan_Some_Xinwen
         {
             OpenDrawer();
         }
+
+        private void toolBar1_ToolbarItemClick(object sender, ToolbarClickEventArgs e)
+        {
+            switch (e.Name)
+            {
+                case "Hots": Form_Hots form_hots = new Form_Hots();this.Show(form_hots); break;
+                case "News":Form_Defult form_news = new Form_Defult(); this.Show(form_news); break;
+                case "Types": Form_Types form_types = new Form_Types(); this.Show(form_types); break;
+                case "Mine": Form_Mine form_mine = new Form_Mine(); this.Show(form_mine); break;
+                default:
+                    break;
+            };
+
+        }
     }
 }

@@ -75,6 +75,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Colors.cs" />
     <Compile Include="Form_Hots.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -143,6 +144,12 @@
     <Compile Include="Form_Login.Designer.cs">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Template_Hots.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template_Hots.Designer.cs">
+      <DependentUpon>Template_Hots.cs</DependentUpon>
+    </Compile>
     <Compile Include="Template_News.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -155,8 +162,18 @@
     <Compile Include="Template_Sides.Designer.cs">
       <DependentUpon>Template_Sides.cs</DependentUpon>
     </Compile>
+    <Compile Include="Template_Sides_Hot.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Template_Sides_Hot.Designer.cs">
+      <DependentUpon>Template_Sides_Hot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Weibo_Hots.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form_Hots.resx">
+      <DependentUpon>Form_Hots.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_News.resx">
       <DependentUpon>Form_News.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,11 +196,17 @@
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Template_Hots.resx">
+      <DependentUpon>Template_Hots.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Template_News.resx">
       <DependentUpon>Template_News.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Template_Sides.resx">
       <DependentUpon>Template_Sides.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template_Sides_Hot.resx">
+      <DependentUpon>Template_Sides_Hot.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
