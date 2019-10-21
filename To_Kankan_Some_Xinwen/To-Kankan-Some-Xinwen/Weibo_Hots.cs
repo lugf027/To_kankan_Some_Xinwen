@@ -16,7 +16,11 @@ namespace To_Kankan_Some_Xinwen
 
         public Weibo_Hots()
         {
-            String connetStr = "";
+            String connetStr =  "server=" + Config.server + ";" +
+                                "port=" + Config.port + ";" +
+                                "user=" + Config.user + ";" +
+                                "password=" + Config.pwd + "; " +
+                                "database=" + Config.database + ";";
             // server=127.0.0.1/localhost 代表本机，端口号port默认是3306可以不写
             MySqlConnection conn = new MySqlConnection(connetStr);
 
@@ -76,7 +80,20 @@ namespace To_Kankan_Some_Xinwen
             return save.Tables[0].Rows[cursor][4].ToString();
         }
 
-
+        //排名变化（返回字体颜色）
+        public System.Drawing.Color get_lbl_color()
+        {
+            if(int.Parse(save.Tables[0].Rows[cursor][6].ToString()) > 0)
+            {
+                return System.Drawing.Color.Red;
+            }else if(int.Parse(save.Tables[0].Rows[cursor][6].ToString()) == 0)
+            {
+                return System.Drawing.Color.Black;
+            } else
+            {
+                return System.Drawing.Color.Green;
+            }
+        }
 
         //热搜数量，用以判断截止动态显示
         public int get_hots_num()

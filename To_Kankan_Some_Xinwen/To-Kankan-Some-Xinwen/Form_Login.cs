@@ -46,7 +46,11 @@ namespace To_Kankan_Some_Xinwen
         private void btn_log_Press(object sender, EventArgs e)
         {
             Console.WriteLine("初始化？");
-            String connetStr = "";
+            String connetStr = "server=" + Config.server + ";" +
+                                "port=" + Config.port + ";" +
+                                "user=" + Config.user + ";" +
+                                "password=" + Config.pwd + "; " +
+                                "database=" + Config.database + ";";
             // server=127.0.0.1/localhost 代表本机，端口号port默认是3306可以不写
             MySqlConnection conn = new MySqlConnection(connetStr);
             try

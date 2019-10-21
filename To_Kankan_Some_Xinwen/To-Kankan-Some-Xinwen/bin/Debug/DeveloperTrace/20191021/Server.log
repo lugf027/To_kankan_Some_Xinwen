@@ -1,0 +1,69 @@
+2019/10/21 20:27:06 [Server] Starting 
+2019/10/21 20:27:07 [Initial] Version: 490.1567042376, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\
+        DefaultImagePath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Web
+ 
+2019/10/21 20:27:07 [Server] Started 
+2019/10/21 20:27:07 [AutoSet] Start 
+2019/10/21 20:27:49 [TcpAccept] 10.135.6.215:62645 
+2019/10/21 20:27:49 [860198041914228-10.135.6.215] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"PCT-AL10","screenSize":{"width":1080,"height":2090},"density":3.0,"version":"4.9.0","coreVersion":"4.9.0","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN","en-CN"]}} 
+2019/10/21 20:30:43 [Server] Starting 
+2019/10/21 20:30:44 [Initial] Version: 490.1567042376, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\
+        DefaultImagePath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Web
+ 
+2019/10/21 20:30:44 [Server] Started 
+2019/10/21 20:30:44 [AutoSet] Start 
+2019/10/21 20:30:48 [TcpAccept] 10.135.6.215:62681 
+2019/10/21 20:30:48 [860198041914228-10.135.6.215] {"deviceOS":"Android","deviceOSVersion":"9","deviceModel":"PCT-AL10","screenSize":{"width":1080,"height":2090},"density":3.0,"version":"4.9.0","coreVersion":"4.9.0","autoBuild":false,"isCompany":true,"extraInfo":{"package_name":"com.smobiler.app","display_name":"Smobiler","plugin_msg":null,"lowMemory":false,"languages":["zh-Hans-CN","en-CN"]}} 
+2019/10/21 20:35:29 [TcpAccept] 10.135.6.215:62826 
+2019/10/21 20:36:13 [Server] Starting 
+2019/10/21 20:36:13 [Initial] Version: 490.1567042376, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\
+        DefaultImagePath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Web
+ 
+2019/10/21 20:36:13 [Server] Started 
+2019/10/21 20:36:13 [AutoSet] Start 
+2019/10/21 20:36:15 [TcpAccept] 10.135.6.215:62836 
+2019/10/21 20:38:32 [Server] Starting 
+2019/10/21 20:38:32 [Initial] Version: 490.1567042376, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\
+        DefaultImagePath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Web
+ 
+2019/10/21 20:38:32 [Server] Started 
+2019/10/21 20:38:32 [AutoSet] Start 
+2019/10/21 20:38:32 [TcpAccept] 10.135.6.215:62849 
+2019/10/21 20:43:14 [TcpAccept] 10.135.6.215:62872 
+2019/10/21 21:25:08 [Server] Starting 
+2019/10/21 21:25:08 [Initial] Version: 490.1567042376, HttpServerPort: 2324, TcpServerPort: 2323, DeveloperTrace: Single, DebugMode: True, TracePrint: True, ClientTrace: False, EnableStackView: True, SessionTimeOut: 1800, NetworkTimeOut: 30, MirrorPatternMaxVerifyTimes: 3, FormStackMaxCount: 10, RelativeScreen: True, TextFontScaling: True, ResourceDenyLocation: , SysTrace: False
+        BasePath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\
+        DefaultImagePath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Image
+        DefaultAudioPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Audio
+        DefaultDocumentPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Document
+        DefaultUploadPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Upload
+        DefaultMediaPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Media
+        DefaultWebPath: C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Resources\Web
+ 
+2019/10/21 21:25:08 [Server] Started 
+2019/10/21 21:25:08 [AutoSet] Start 
+2019/10/21 21:25:16 [TcpAccept] 10.135.6.215:63178 

@@ -22,7 +22,7 @@ namespace To_Kankan_Some_Xinwen
             switch (ran_num)
             {
                 case 1: return System.Drawing.Color.OrangeRed;
-                case 2: return System.Drawing.Color.Gray;
+                case 2: return System.Drawing.Color.DarkGray;
                 case 3: return System.Drawing.Color.Green;
                 case 4: return System.Drawing.Color.SkyBlue;
                 case 5: return System.Drawing.Color.DodgerBlue;

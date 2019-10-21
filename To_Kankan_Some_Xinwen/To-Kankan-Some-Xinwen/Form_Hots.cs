@@ -38,13 +38,13 @@ namespace To_Kankan_Some_Xinwen
         {
             //
             weibo_hots = new Weibo_Hots();
-
-
-            String connetStr = "";
+            String connetStr = "server=" + Config.server + ";" +
+                                "port=" + Config.port + ";" +
+                                "user=" + Config.user + ";" +
+                                "password=" + Config.pwd + "; " +
+                                "database=" + Config.database + ";";
             // server=127.0.0.1/localhost 代表本机，端口号port默认是3306可以不写
             MySqlConnection conn = new MySqlConnection(connetStr);
-
-            
 
             try
             {
@@ -52,7 +52,7 @@ namespace To_Kankan_Some_Xinwen
                 Console.WriteLine("已经建立连接");
                 //在这里使用代码对数据库进行增删查改
 
-                string sql = "select * from `weibo` where time = '2019-10-21 01:00:02'";
+                string sql = "select * from `weibo` where time = '2019-10-21 00:59:01'";
                 MySqlDataAdapter find = new MySqlDataAdapter(sql, conn);
                 DataSet save = new DataSet();
 
@@ -129,7 +129,7 @@ namespace To_Kankan_Some_Xinwen
 
         private void btn_start_Press(object sender, EventArgs e)
         {
-            this.Client.Timer.Start(1, (obj, args) => { 
+            this.Client.Timer.Start(2, (obj, args) => { 
                 Toast("当时时间" + weibo_hots.get_hot_time());
                 for (int i = 0; i < 51; i++)
                 {
@@ -140,6 +140,7 @@ namespace To_Kankan_Some_Xinwen
                     //热搜值的更新
                     Labels_Value[i].Text = weibo_hots.get_lbl_value();
                     Labels_Value[i].Location = weibo_hots.get_lbl_location(buttons[i], i);
+                    Labels_Value[i].ForeColor = weibo_hots.get_lbl_color();
                     //置顶热搜特殊处理
                     if (i == 50)
                     {
