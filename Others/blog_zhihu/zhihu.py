@@ -4,11 +4,14 @@
 # @FileName: zhihu.py
 # @Software: PyCharm
 # @Github  ：https://github.com/lugf027
-
+import mysql.connector
 from selenium import webdriver
 import requests
 import re
+import datetime
+import time
 
+time_now = ''
 
 def get_zhihu_hots():
     url = "https://www.zhihu.com/billboard"
@@ -41,8 +44,49 @@ def get_zhihu_hots():
     result = []
     for hot in hots:
         result.append(list(hot))  # 元组转列表
-    print(len(result))
+
+    global time_now
+    time_now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(time_now)
     return result
 
+def begin():
+    global time_now
+    while True:
+        try:
+            hot_points = get_zhihu_hots()
 
-print(get_zhihu_hots())
+            mydb = mysql.connector.connect(
+                host="xx.xx.xx.xx",
+                user="xx",
+                passwd="xx",
+                database="xx"
+            )
+            mycursor = mydb.cursor()
+            for hot_point in hot_points:
+                sql = "INSERT INTO zhihu1 (NO, TITLE, VALUE, TIME) VALUES (%s, %s, %s, %s)"
+                val = (hot_point[0], hot_point[1], hot_point[2], time_now)
+                mycursor.execute(sql, val)
+                mydb.commit()  # 数据表内容有更新，必须使用到该语句
+            print(hot_points)
+            time.sleep(120)
+        except Exception as ex:
+            print('-'*30)
+            print(ex)
+            print('-' * 30)
+        finally:
+            print(time_now)
+
+begin()
+
+# CREATE TABLE IF NOT EXISTS `zhihu`(
+#    `ID` INT(10) UNSIGNED AUTO_INCREMENT,
+#    `NO` INT(2) NOT NULL,
+#    `TITLE` VARCHAR(50) NOT NULL,
+#    `VALUE` INT(5) NOT NULL,
+#    `TIME` TIMESTAMP,
+#    `COLOR` INT(2) DEFAULT 0 NOT NULL,
+#    `NUM_CHANGE` INT(2) DEFAULT 0 NOT NULL,
+#    PRIMARY KEY ( `ID` )
+# )ENGINE=INNODB DEFAULT CHARSET=utf8;
+
