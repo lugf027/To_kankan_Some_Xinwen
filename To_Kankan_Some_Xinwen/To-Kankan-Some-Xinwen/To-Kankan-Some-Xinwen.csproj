@@ -51,6 +51,9 @@
     <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.18\lib\net452\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
       <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
     </Reference>
@@ -75,58 +78,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Colors.cs" />
-    <Compile Include="Config.cs" />
-    <Compile Include="Form_Hots.cs">
+    <Compile Include="binds\Colors.cs" />
+    <Compile Include="binds\News.cs" />
+    <Compile Include="config\Config.cs" />
+    <Compile Include="forms\Form_Hots.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form_Hots.Designer.cs">
+    <Compile Include="forms\Form_Hots.Designer.cs">
       <DependentUpon>Form_Hots.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Mine.cs">
+    <Compile Include="forms\Form_Mine.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form_Mine.Designer.cs">
+    <Compile Include="forms\Form_Mine.Designer.cs">
       <DependentUpon>Form_Mine.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_News.cs">
+    <Compile Include="forms\Form_News.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form_News.Designer.cs">
+    <Compile Include="forms\Form_News.Designer.cs">
       <DependentUpon>Form_News.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Types.cs">
+    <Compile Include="forms\Form_Types.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form_Types.Designer.cs">
+    <Compile Include="forms\Form_Types.Designer.cs">
       <DependentUpon>Form_Types.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGenerateQRcode.cs">
+    <Compile Include="origin\frmGenerateQRcode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGenerateQRcode.Designer.cs">
+    <Compile Include="origin\frmGenerateQRcode.Designer.cs">
       <DependentUpon>frmGenerateQRcode.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHelp.cs">
+    <Compile Include="origin\frmHelp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHelp.Designer.cs">
+    <Compile Include="origin\frmHelp.Designer.cs">
       <DependentUpon>frmHelp.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
+    <Compile Include="origin\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
+    <Compile Include="origin\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSetting.cs">
+    <Compile Include="origin\frmSetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSetting.Designer.cs">
+    <Compile Include="origin\frmSetting.Designer.cs">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="MobileGlobal.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="origin\MobileGlobal.cs" />
+    <Compile Include="news\RenminwangNews.cs" />
+    <Compile Include="origin\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -138,81 +143,81 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Settings.cs" />
-    <Compile Include="Form_Login.cs">
+    <Compile Include="origin\Settings.cs" />
+    <Compile Include="forms\Form_Login.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form_Login.Designer.cs">
+    <Compile Include="forms\Form_Login.Designer.cs">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Template_Hots.cs">
+    <Compile Include="templates\Template_Hots.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Template_Hots.Designer.cs">
+    <Compile Include="templates\Template_Hots.Designer.cs">
       <DependentUpon>Template_Hots.cs</DependentUpon>
     </Compile>
-    <Compile Include="Template_News.cs">
+    <Compile Include="templates\Template_News.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Template_News.Designer.cs">
+    <Compile Include="templates\Template_News.Designer.cs">
       <DependentUpon>Template_News.cs</DependentUpon>
     </Compile>
-    <Compile Include="Template_Sides.cs">
+    <Compile Include="templates\Template_Sides.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Template_Sides.Designer.cs">
+    <Compile Include="templates\Template_Sides.Designer.cs">
       <DependentUpon>Template_Sides.cs</DependentUpon>
     </Compile>
-    <Compile Include="Template_Sides_Hot.cs">
+    <Compile Include="templates\Template_Sides_Hot.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Template_Sides_Hot.Designer.cs">
+    <Compile Include="templates\Template_Sides_Hot.Designer.cs">
       <DependentUpon>Template_Sides_Hot.cs</DependentUpon>
     </Compile>
-    <Compile Include="Weibo_Hots.cs" />
+    <Compile Include="binds\Weibo_Hots.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form_Hots.resx">
+    <EmbeddedResource Include="forms\Form_Hots.resx">
       <DependentUpon>Form_Hots.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_News.resx">
+    <EmbeddedResource Include="forms\Form_News.resx">
       <DependentUpon>Form_News.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGenerateQRcode.resx">
+    <EmbeddedResource Include="origin\frmGenerateQRcode.resx">
       <DependentUpon>frmGenerateQRcode.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmHelp.resx">
+    <EmbeddedResource Include="origin\frmHelp.resx">
       <DependentUpon>frmHelp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
+    <EmbeddedResource Include="origin\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSetting.resx">
+    <EmbeddedResource Include="origin\frmSetting.resx">
       <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Login.resx">
+    <EmbeddedResource Include="forms\Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Template_Hots.resx">
+    <EmbeddedResource Include="templates\Template_Hots.resx">
       <DependentUpon>Template_Hots.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Template_News.resx">
+    <EmbeddedResource Include="templates\Template_News.resx">
       <DependentUpon>Template_News.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Template_Sides.resx">
+    <EmbeddedResource Include="templates\Template_Sides.resx">
       <DependentUpon>Template_Sides.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Template_Sides_Hot.resx">
+    <EmbeddedResource Include="templates\Template_Sides_Hot.resx">
       <DependentUpon>Template_Sides_Hot.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="config\app.config" />
+    <None Include="config\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -221,6 +226,7 @@
   <ItemGroup>
     <Content Include="Smobiler_128.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

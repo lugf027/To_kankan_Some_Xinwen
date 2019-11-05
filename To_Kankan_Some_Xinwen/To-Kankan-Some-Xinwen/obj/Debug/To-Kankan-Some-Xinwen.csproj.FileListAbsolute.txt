@@ -63,3 +63,5 @@ C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kan
 C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To-Kankan-Some-Xinwen.pdb
 C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.Template_Sides_Hot.resources
 C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\obj\Debug\To_Kankan_Some_Xinwen.Form_Defult.resources
+C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Newtonsoft.Json.dll
+C:\Users\leo\Documents\GitHub\To_kankan_Some_Xinwen\To_Kankan_Some_Xinwen\To-Kankan-Some-Xinwen\bin\Debug\Newtonsoft.Json.xml
